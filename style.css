@@ -1,0 +1,157 @@
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin:0;
+   background-color: rgb(235, 232, 232);
+}
+#game-container{
+    width: 80%;
+    height: auto;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+#game-container h1{
+    font-size: 32px;
+    text-align: center;
+    color: rgb(230, 0, 255);
+}
+
+#game-container input{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    font-size: 32px;
+    box-sizing: border-box;
+    
+}
+
+
+#info-game{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0 0 0 ;
+}
+
+#info-game #timer-display{
+    font-size: 23px;
+    padding-top: 20px;
+}
+
+#info-game button{
+width: 150px;
+height: 50px;
+display: flex;
+justify-content: center;
+text-align: center;
+padding-top:15px ;
+color: #fa3eea;
+background-color: rgb(255, 255, 255);
+border-radius: 5px;
+}
+
+#info-game button:hover {
+    border: 1px solid white;
+    background-color: #fa3eea; /* Màu nền khi hover */
+    color: #ffffff; /* Màu chữ khi hover */
+  }
+
+#game-content :placeholder-shown{
+    width: 99.6%;
+    font-size: 32px;
+    color: rgb(180, 255, 255);
+    display: flex;
+    justify-content: center;
+    /* padding: 2px; */
+    margin-bottom: 15px;
+}
+
+#game-content{
+    justify-content: center;
+}
+
+
+#keyboard-container{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin :20px 0;
+} 
+
+.key-row{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.key{
+    /* border: 1px solid black; */
+    width: 50px;
+    height: 50px;
+    margin:5px;
+    padding: 5px 5px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+#score-display {
+    font-size: 18px;
+    color: blue;
+}
+
+#score-display.positive {
+    color: blue;
+}
+
+#score-display.negative {
+    color: red;
+}
+
+.key {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.key.active {
+    background-color: #fa3eea; /* Màu vàng khi nhấn */
+}
+#typing-input{
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #fa3eea;
+    border-radius:10px ;
+}
+
+#word-display {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+#score-display {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#result {
+    font-size: 24px;
+    color: green;
+}

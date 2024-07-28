@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-Fast-Finger Game</title>
+    <link rel="shortcut icon" type="image/png" href="Remove-bg.ai_1722006647012.png"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game-container">
+    <h1>
+        10 FAST FINGERS !!!
+    </h1>
+
+
+    <div class="container">
+        <p id="word-display"></p>
+        <input type="text" id="typing-input" placeholder="Bắt đầu gõ... ?">
+
+    <div id="info-game">
+        <div id="timer-display"> Thời gian còn:60s</div>
+        <div><p>Điểm: <span id="score-display">0</span></p></div>
+        <button onclick="startGame()">Bắt đầu chơi</button>
+    </div>
+    
+    <div id="result"></div>
+
+    <div id="keyboard-container">
+        <div class="key-row">
+            <div class="key" data-key="81">Q</div>
+            <div class="key" data-key="87">W</div>
+            <div class="key" data-key="69">E</div>
+            <div class="key" data-key="82">R</div>
+            <div class="key" data-key="84">T</div>
+            <div class="key" data-key="89">Y</div>
+            <div class="key" data-key="85">U</div>
+            <div class="key" data-key="73">I</div>
+            <div class="key" data-key="79">O</div>
+            <div class="key" data-key="80">P</div>
+            
+        </div>
+        <div class="key-row">
+            <div class="key" data-key="65">A</div>
+            <div class="key" data-key="83">S</div>
+            <div class="key" data-key="68">D</div>
+            <div class="key" data-key="70">F</div>
+            <div class="key" data-key="71">G</div>
+            <div class="key" data-key="72">H</div>
+            <div class="key" data-key="74">J</div>
+            <div class="key" data-key="75">K</div>
+            <div class="key" data-key="76">L</div>
+        </div>
+        <div class="key-row">
+            <div class="key" data-key="90">Z</div>
+            <div class="key" data-key="88">X</div>
+            <div class="key" data-key="67">C</div>
+            <div class="key" data-key="86">V</div>
+            <div class="key" data-key="66">B</div>
+            <div class="key" data-key="78">N</div>
+            <div class="key" data-key="77">M</div>
+        </div>
+    </div>
+    
+</div>    
+
+    <script src="script.js"></script>
+</body>
+</html>
