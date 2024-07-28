@@ -76,7 +76,7 @@ function getNextWord() {
 
 // Hàm hiển thị kết quả
 function displayResult() {
-    result.textContent = `Điểm: ${score}`;
+    result.textContent = `Chúc mừng điểm của bạn: ${score}`;
 }
 
 // Gán sự kiện cho nút "Bắt đầu chơi"
