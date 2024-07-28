@@ -51,14 +51,15 @@ function updateTimer() {
     }
 }
 
-// Hàm xử lý khi người dùng nhập
+
+
 function handleTyping(event) {
     if (event.key === "Enter") {
         if (typingInput.value.trim() === currentWord) {
             score++;
             scoreDisplay.classList.add('positive');
         } else {
-            score--;
+            score = Math.max(score - 1, 0); // Trừ điểm nhưng không để điểm âm
             scoreDisplay.classList.add('negative');
         }
         scoreDisplay.textContent = score;
@@ -66,6 +67,7 @@ function handleTyping(event) {
         getNextWord();
     }
 }
+
 
 // Hàm lấy từ ngẫu nhiên và hiển thị
 function getNextWord() {
